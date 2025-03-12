@@ -1,0 +1,469 @@
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 4rem;
+    }
+
+    .about-text,
+    .about-image {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-image {
+        margin-top: 0;
+    }
+
+    .about-image-slider {
+        position: relative;
+        height: 400px;
+    }
+
+    .slider-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .menu-content {
+        gap: 2rem;
+    }
+
+    .menu-image {
+        flex: 0 0 150px;
+        height: 150px;
+    }
+
+    .dining-about,
+    .dining-approach {
+        gap: 4rem;
+    }
+
+    .gallery-grid {
+        gap: 15px;
+    }
+
+    .gallery-column {
+        width: 250px;
+    }
+
+    .gallery-item.large {
+        height: 350px;
+    }
+
+    .gallery-item.medium {
+        height: 250px;
+    }
+
+    .gallery-item.small {
+        height: 200px;
+    }
+
+    .contact-wrapper {
+        gap: 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .header .container {
+        height: 70px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -70%;
+        width: 70%;
+        height: calc(100vh - 70px);
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        transition: var(--transition);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        position: relative;
+    }
+
+    .nav-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--dark-color);
+        position: absolute;
+        transition: var(--transition);
+    }
+
+    .nav-toggle span:first-child {
+        top: 0;
+    }
+
+    .nav-toggle span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav-toggle span:last-child {
+        bottom: 0;
+    }
+
+    .nav-toggle.active span:first-child {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:last-child {
+        transform: rotate(-45deg);
+        bottom: 50%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .menu-tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        width: calc(50% - 0.5rem);
+    }
+
+    .gallery-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .gallery-column {
+        width: calc(50% - 10px);
+    }
+
+    .gallery-item.large {
+        height: 300px;
+    }
+
+    .gallery-item.medium {
+        height: 220px;
+    }
+
+    .gallery-item.small {
+        height: 180px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-text {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .menu-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-subtitle {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .menu-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .menu-details h3 {
+        font-size: 1.8rem;
+    }
+
+    .menu-image {
+        margin-bottom: 1.5rem;
+    }
+
+    .menu-cta {
+        margin-top: 3rem;
+    }
+
+    .dining-about,
+    .dining-approach {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .dining-about {
+        margin-bottom: 4rem;
+    }
+
+    .dining-content,
+    .approach-content {
+        text-align: center;
+    }
+
+    .section-title,
+    .approach-title {
+        font-size: 2rem;
+    }
+
+    .approach-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .order-title {
+        font-size: 2.8rem;
+    }
+
+    .order-location {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .delivery-partners {
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .partner-link img {
+        height: 35px;
+    }
+
+    .footer {
+        padding: 60px 0 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-links h3,
+    .footer-contact h3,
+    .footer-hours h3 {
+        text-align: center;
+    }
+
+    .footer-links h3::after,
+    .footer-contact h3::after,
+    .footer-hours h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-links ul {
+        text-align: center;
+    }
+
+    .footer-contact ul li {
+        justify-content: center;
+    }
+
+    .footer-hours ul li {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .tab-btn {
+        width: 100%;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        flex-direction: column;
+    }
+
+    .gallery-column {
+        width: 100%;
+    }
+
+    .gallery-item.large,
+    .gallery-item.medium,
+    .gallery-item.small {
+        height: 250px;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .menu-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .menu-title {
+        font-size: 2rem;
+    }
+
+    .menu-details p {
+        font-size: 1rem;
+    }
+
+    .menu-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .dining {
+        padding: 60px 0;
+    }
+
+    .section-title,
+    .approach-title {
+        font-size: 1.8rem;
+    }
+
+    .approach-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .dining-description,
+    .approach-description {
+        font-size: 1rem;
+    }
+
+    .approach-divider .dot::before,
+    .approach-divider .dot::after {
+        width: 30px;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: 1.2rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    .order-title {
+        font-size: 2.3rem;
+    }
+
+    .order-location {
+        font-size: 1.1rem;
+    }
+
+    .delivery-partners {
+        gap: 1.5rem;
+    }
+
+    .partner-link img {
+        height: 30px;
+    }
+}
