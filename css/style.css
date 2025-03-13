@@ -105,17 +105,17 @@ body {
 
 .carousel-slide:nth-child(1) {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('../images/hero.avif') center/cover no-repeat;
+                url('../images/slider2.avif') center/cover no-repeat;
 }
 
 .carousel-slide:nth-child(2) {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('../images/hero2.avif') center/cover no-repeat;
+                url('../images/slider1.jpg') center/cover no-repeat;
 }
 
 .carousel-slide:nth-child(3) {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('../images/hero3.avif') center/cover no-repeat;
+                url('../images/slider3.avif') center/cover no-repeat;
 }
 
 .carousel-slide.active {
