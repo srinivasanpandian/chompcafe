@@ -12,6 +12,7 @@
     --light-color: #f9f9f9;
     --gray-color: #636e72;
     --transition: all 0.3s ease;
+    --white: #fff;
 }
 
 body {
@@ -79,6 +80,8 @@ body {
     position: relative;
     padding-top: 80px;
     overflow: hidden;
+    background-color: white;
+    background-blend-mode: overlay;
 }
 
 .hero-carousel {
@@ -178,11 +181,15 @@ body {
 
 /* About Section */
 .about {
-    padding: 100px 0;
-    background-color: #ffffff;
+    padding: 70px 0;
+    background-color: #A47B67;
 }
 
 .about-content {
+    /* background-color: #A47B67; */
+    box-shadow: none;
+    border: none;
+    backdrop-filter: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -195,9 +202,9 @@ body {
 }
 
 .about-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.2;
-    color: #b6977b;
+    color: var(--white);
     font-weight: 600;
     margin-bottom: 2rem;
     font-family: 'Playfair Display', serif;
@@ -206,7 +213,7 @@ body {
 .about-description {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #333;
+    color: black;
     margin-bottom: 2.5rem;
     opacity: 0.9;
 }
@@ -215,7 +222,7 @@ body {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #b6977b;
+    color: white;
     font-weight: 500;
     font-size: 1.1rem;
     transition: var(--transition);
@@ -264,123 +271,110 @@ html {
 
 /* Menu Section Styles */
 .menu {
-    padding: 100px 0;
-    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background-color: #A47B67;
 }
 
-.menu-subtitle {
-    font-size: 2rem;
-    color: #b6977b;
-    font-family: 'Dancing Script', cursive;
-    margin-bottom: 1rem;
-}
-
-.menu-title {
-    font-size: 3rem;
-    color: #2d2d2d;
-    margin-bottom: 4rem;
-    font-weight: 600;
-}
-
-.specialities {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-.menu-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-}
-
-.menu-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-    max-width: 1200px;
-}
-
-.menu-image {
-    flex: 0 0 200px;
-    height: 200px;
-    border-radius: 10%;
-    overflow: hidden;
-    border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.menu-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.menu-details {
-    flex: 1;
-    padding-top: 1rem;
-}
-
-.menu-details h3 {
-    font-size: 2rem;
-    color: #2d2d2d;
-    margin-bottom: 1.5rem;
-}
-
-.menu-details p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.signature-note {
-    color: #ff6b2b;
-    font-style: italic;
-}
-
-/* Menu Button Styles */
-.menu-cta {
+.menu .section-subtitle {
     text-align: center;
-    margin-top: 4rem;
+    color: #f4c397;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+.menu .section-title{
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem; 
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.menu-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 1rem 2.5rem;
-    background-color: #ff6b2b;
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 107, 43, 0.2);
-}
-
-.menu-button .arrow {
-    margin-left: 0.8rem;
+.menu-card {
+    background: transparent;
+    border-radius: 15px;
+    overflow: hidden;
     transition: transform 0.3s ease;
 }
 
-.menu-button:hover {
-    background-color: #ff5b15;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 43, 0.3);
+.menu-card:hover {
+    transform: translateY(-10px);
 }
 
-.menu-button:hover .arrow {
-    transform: translateX(5px);
+.card-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    border-radius: 15px;
 }
 
-/* Add to your existing styles in head section */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    color: var(--white);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menu-card {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .card-image {
+        aspect-ratio: 16/10;
+    }
+}
 
 /* Dining and Ambiance Section */
 .dining {
     padding: 100px 0;
-    background-color: #fff;
+    background-color: #A47B67;
 }
 
 /* About Us Part */
@@ -417,7 +411,7 @@ html {
 .dining-description {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #666;
+    color: black;
 }
 
 /* Our Approach Part */
@@ -434,14 +428,14 @@ html {
 
 .approach-subtitle {
     font-family: 'Dancing Script', cursive;
-    color: #b6977b;
+    color: #f4c397;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .approach-title {
     font-size: 2.5rem;
-    color: #2d2d2d;
+    color: white;
     margin-bottom: 1.5rem;
     font-weight: 600;
 }
@@ -483,7 +477,7 @@ html {
 .approach-description {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #666;
+    color: black;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -502,7 +496,7 @@ html {
 /* Gallery Section Styles */
 .gallery {
     padding: 80px 0;
-    background-color: #fff;
+    background-color: #A47B67;
 }
 
 .gallery-grid {
@@ -601,7 +595,7 @@ html {
 /* Contact Section Styles */
 .contact {
     padding: 80px 0;
-    background-color: #fff;
+    background-color: #A47B67;
 }
 
 .contact-title {
@@ -611,11 +605,11 @@ html {
 }
 
 .title-dark {
-    color: #1a2942;
+    color: white;
 }
 
 .title-orange {
-    color: #ff6b2b;
+    color: white;
 }
 
 .contact-wrapper {
@@ -636,7 +630,7 @@ html {
 }
 
 .contact-info h3 {
-    color: #1a2942;
+    color: black;
     font-size: 1.5rem;
     margin-bottom: 25px;
 }
@@ -646,13 +640,13 @@ html {
 }
 
 .email-link {
-    color: #b6977b;
+    color: #eeb583;
     text-decoration: none;
     font-weight: 500;
 }
 
 .phone-link {
-    color: #b6977b;
+    color: #eeb583;
     text-decoration: none;
     font-weight: 500;
 }
@@ -668,7 +662,7 @@ html {
 }
 
 .registered-address h4 {
-    color: #b6977b;
+    color: #eeb583;
     margin-bottom: 15px;
 }
 
@@ -738,7 +732,7 @@ html {
 
 /* Footer Styles */
 .footer {
-    background-color: #1a1a1a;
+    background-color: white;
     color: #fff;
     padding: 80px 0 20px;
 }
@@ -765,7 +759,7 @@ html {
 }
 
 .footer-description {
-    color: #999;
+    color: black;
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -796,8 +790,8 @@ html {
 .footer-links h3,
 .footer-contact h3,
 .footer-hours h3 {
-    color: #fff;
-    font-size: 1.2rem;
+    color: black;
+    font-size: 2rem;
     margin-bottom: 25px;
     position: relative;
 }
@@ -825,7 +819,7 @@ html {
 }
 
 .footer-links ul li a {
-    color: #999;
+    color: black;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -840,7 +834,7 @@ html {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
-    color: #999;
+    color: black;
 }
 
 .footer-contact ul li i {
@@ -849,7 +843,7 @@ html {
 }
 
 .footer-contact ul li a {
-    color: #999;
+    color: black;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -862,7 +856,7 @@ html {
 .footer-hours ul li {
     display: flex;
     justify-content: space-between;
-    color: #999;
+    color: black;
     margin-bottom: 15px;
 }
 
@@ -874,7 +868,87 @@ html {
 }
 
 .footer-bottom p {
-    color: #999;
+    color: black;
     font-size: 0.9rem;
+}
+
+/* Update text colors for better contrast */
+.section-subtitle,
+.section-title,
+.section-text,
+.card-title,
+.card-text {
+    color: var(--white);
+}
+
+/* Update any cards or content boxes that need contrast */
+.card,
+.menu-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Update header background when scrolled */
+.header.active {
+    background-color: #A47B67;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Update navigation links for better visibility */
+.navbar-link {
+    color: var(--white);
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+    color: var(--primary-color);
+}
+
+/* Media Queries - maintain background color across breakpoints */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #A47B67;
+    }
+    
+    .navbar-link {
+        color: var(--white);
+    }
+}
+
+/* Update text colors in about section */
+.about .section-title,
+.about .section-subtitle,
+.about .section-text,
+.about p {
+    color: var(--white);
+}
+
+/* If there are any specific about cards or elements, update them */
+.about-card,
+.about-item {
+    background-color: transparent;
+    border: none;
+}
+
+/* Ensure text remains visible */
+.about-content h2,
+.about-content p,
+.about-content .section-subtitle,
+.about-content .section-title,
+.about-content .section-text {
+    color: var(--white);
+    text-shadow: none;
+}
+
+/* If there's a Read More button, style it appropriately */
+.about-content .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+}
+
+.about-content .btn-primary:hover {
+    background-color: var(--primary-color-hover);
 }
 

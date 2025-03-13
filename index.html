@@ -28,7 +28,7 @@
                 <ul class="nav-menu">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="menu.html">Menu</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
@@ -43,21 +43,21 @@
                 <div class="hero-content">
                     <h1>Welcome to Chomp</h1>
                     <p>Experience Culinary Excellence</p>
-                    <a href="#menu" class="cta-button">View Menu</a>
+                    <a href="menu.html" class="cta-button">View menu</a>
                 </div>
             </div>
             <div class="carousel-slide">
                 <div class="hero-content">
                     <h1>Fresh Ingredients</h1>
                     <p>Quality You Can Taste</p>
-                    <a href="#menu" class="cta-button">Browse Menu</a>
+                    <a href="menu.html" class="cta-button">Browse menu</a>
                 </div>
             </div>
             <div class="carousel-slide">
                 <div class="hero-content">
                     <h1>Exquisite Dining</h1>
                     <p>Where Every Meal is a Celebration</p>
-                    <a href="#contact" class="cta-button">Book a Table</a>
+                    <a href="menu.html" class="cta-button">Menu card</a>
                 </div>
             </div>
             <div class="carousel-dots">
@@ -72,18 +72,19 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
+                
                 <div class="about-text">
-                    <h2 class="about-title">Biryani, enriched by<br>the history that<br>stands behind it.</h2>
+                    <h2 class="about-title">Chicken Wrap – A taste woven with rich history and tradition.</h2>
                     <p class="about-description">
                         The Chomp Restaurant merged the finesse of traditional cooking and the flavour of Indian cuisines in a way that had never been done before over 3 decades. The Chomp standard and the promise of excellence behind the name remains till today.
                     </p>
                     <a href="menu.html" class="about-cta">
-                        Read More
+                        View Menu
                         <span class="arrow">→</span>
                     </a>
                 </div>
                 <div class="about-image">
-                    <img src="images/hero2.avif" alt="Signature Biryani Dish">
+                    <img src="images/chicken wrap.avif" alt="Signature Biryani Dish">
                     <div class="image-overlay"></div>
                 </div>
             </div>
@@ -91,46 +92,59 @@
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="menu" id="menu">
+    <section class="menu" id="menu">
         <div class="container">
-            <p class="menu-subtitle" style="text-align: center;">From the menu</p>
-            <h2 class="menu-title" style="text-align: center;">OUR SPECIALITIES</h2>
-               
-            <div class="specialities">
-                <!-- Lunch Special -->
-                <div class="menu-item">
-                    <div class="menu-content">
-                        <div class="menu-image">
-                            <img src="images/hero2.avif" alt="Lunch Thali">
-                        </div>
-                        <div class="menu-details">
-                            <h3>LUNCH</h3>
-                            <p>Live Life King Size. With this motto, we bring you to The Waterfall Grand Thali with varieties of dishes handpicked by our chefs and served hot to satiate your appetite. A word of Caution- You might have to come on an empty stomach as the Thali needs ample room. Non Thali Lovers, Never Mind! You could still pick from our standard lunch menu with the best of dishes served from multi-cuisines.</p>
-                        </div>
+            <p class="section-subtitle">Popular Menu</p>
+            <h2 class="section-title">Our Signature Dishes</h2>
+            
+            <div class="menu-grid">
+                <!-- Menu Item 1 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="images/chicken wrap.avif" alt="Chicken Biryani" loading="lazy">
                     </div>
+                    <h3 class="card-title">Chicken wrap</h3>
                 </div>
 
-                <!-- Dinner Special -->
-                <div class="menu-item">
-                    <div class="menu-content">
-                        <div class="menu-image">
-                            <img src="images/hero3.avif" alt="Dinner Specialties">
-                        </div>
-                        <div class="menu-details">
-                            <h3>DINNER</h3>
-                            <p>A full sized menu with number of exotic dishes spread across soups, appetizers, starters, main course and desserts. Choose from South Indian, North Indian, Chinese and Tandoori Varieties.</p>
-                            <p class="signature-note">PS : Don't miss to check out our Signature specialties.</p>
-                        </div>
+                <!-- Menu Item 2 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="images/chiken wings.avif" alt="Butter Chicken" loading="lazy">
                     </div>
+                    <h3 class="card-title">Chicken wings</h3>
                 </div>
-            </div>
 
-            <!-- Add this after the specialities div -->
-            <div class="menu-cta">
-                <a href="#full-menu" class="menu-button">
-                    View Full Menu
-                    <span class="arrow">→</span>
-                </a>
+                <!-- Menu Item 3 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="images/sandwich.avif" alt="Paneer Tikka" loading="lazy">
+                    </div>
+                    <h3 class="card-title">Sandwich</h3>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="images/burger.avif" alt="Garlic Naan" loading="lazy">
+                    </div>
+                    <h3 class="card-title">Burger</h3>
+                </div>
+
+                <!-- Menu Item 5 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="images/pasta.avif" alt="Tandoori Chicken" loading="lazy">
+                    </div>
+                    <h3 class="card-title">Pasta</h3>
+                </div>
+
+                <!-- Menu Item 6 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="images/smoothie.avif" alt="Dal Makhani" loading="lazy">
+                    </div>
+                    <h3 class="card-title">Smoothie</h3>
+                </div>
             </div>
         </div>
     </section>
@@ -147,7 +161,7 @@
                     <h3 class="approach-subtitle">The Chomp Story</h3>
                     <h2 class="section-title">Our Story</h2>
                     <p class="dining-description">
-                        The Chomp restaurant, a unit of Concept Dine-in is one of a kind thematic restaurant in Chennai. The restaurant houses magnificent waterfalls of 20 feet and provides a natural and serene atmosphere for a perfect family outing. We have unearthed some of the best and exotic flavors from the state of Andhra Pradesh and Tamil Nadu to treat your taste buds. Come and Indulge in the waterfall and fall for our taste!
+                        The Chomp Restaurant, a unit of Concept Dine-in, is a one-of-a-kind fast food destination in Chennai. We serve a delightful variety of sandwiches, Italian specialties, shakes, juices, and beverages, crafted to satisfy every craving. Whether you're in the mood for a quick bite or a refreshing drink, our menu is designed to treat your taste buds. Come, indulge in flavors that will keep you coming back for more!
                     </p>
                 </div>
             </div>
@@ -209,16 +223,16 @@
     </section>
 
     <!-- Contact Section -->
-    <!-- <section id="contact" class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2 class="contact-title">
                 <span class="title-dark">GET IN</span>
                 <span class="title-orange">TOUCH</span>
             </h2>
 
-            <div class="contact-wrapper"> -->
+            <div class="contact-wrapper">
                 <!-- Contact Info Column -->
-                <!-- <div class="contact-info">
+                <div class="contact-info">
                     <h3>Contact Us</h3>
                     
                     <div class="info-item">
@@ -240,10 +254,10 @@
                         <h4>1, Muthamizh Nagar, Rajiv Gandhi Salai, Old Mahabalipuram Road (OMR), Chennai</h4>
                         
                     </div>
-                </div> -->
+                </div>
 
                 <!-- Contact Form Column -->
-                <!-- <div class="contact-form">
+                <div class="contact-form">
                     <h3>To share your experience, queries, or concerns kindly submit the form below</h3>
                     
                     <form id="contactForm">
@@ -269,14 +283,14 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Footer Section -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
-            <div class="footer-content"> -->
+            <div class="footer-content">
                 <!-- Restaurant Info -->
-                <!-- <div class="footer-info">
+                <div class="footer-info">
                     <div class="footer-logo">
                         <img src="images/Media__4_-removebg-preview (1).png" alt="Chomp Logo">
                     </div>
@@ -289,22 +303,22 @@
                         <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div> -->
+                </div>
 
                 <!-- Quick Links -->
-                <!-- <div class="footer-links">
+                <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="menu.html">Menu</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                </div> -->
+                </div>
 
                 <!-- Contact Info -->
-                <!-- <div class="footer-contact">
+                <div class="footer-contact">
                     <h3>Contact Info</h3>
                     <ul>
                         <li>
@@ -320,10 +334,10 @@
                             <p><a href="mailto:support@geethamveg.com">support@geethamveg.com</a></p>
                         </li>
                     </ul>
-                </div> -->
+                </div>
 
                 <!-- Opening Hours -->
-                <!-- <div class="footer-hours">
+                <div class="footer-hours">
                     <h3>Opening Hours</h3>
                     <ul>
                         <li>
@@ -336,14 +350,14 @@
                         </li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
 
             <!-- Copyright -->
-            <!-- <div class="footer-bottom">
+            <div class="footer-bottom">
                 <p>&copy; 2025 Chomp Restaurant. All Rights Reserved.</p>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="js/main.js"></script> 
 </body>
